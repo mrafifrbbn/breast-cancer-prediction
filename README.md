@@ -1,8 +1,6 @@
 # Context
 
-This is my second data science project. Here, I make machine learning models to predict whether a breast cancer is benign or malignant based on the available features. I try to implement what I have learned so far: standard data cleaning, EDA, classification model, hyperparameter tuning, and dimensionality reduction with PCA.
-
-To run the .ipynb file, the standard `numpy`, `pandas`, and `sklearn` packages are required.
+Hello! This is my second data science project. Here, I make machine learning models to predict whether a breast cancer is benign or malignant based on the available features. I try to implement what I have learned so far: standard data cleaning, EDA, classification model, hyperparameter tuning, and dimensionality reduction with PCA.
 
 # Data
 
@@ -28,6 +26,12 @@ In addition, each of these ten-valued features have three measurements: the mean
 
 All feature values are recoded with four significant digits.
 
+# Methods
+
+I use point biserial correlation to pick the stronger predictor, i.e. `_worst`. Since the two classes are linearly separable, I use logistic regression and SVM as the classifier. To get the optimum results, I employ the grid search method to obtain the best hyperparameters for each model. Next, I use PCA to reduce the dimensionality of the data to see if the results can be improved.
+
+To run the .ipynb file, the standard `numpy`, `pandas`, `matplotlib`, `seaborn`, and `sklearn` packages are required.
+
 # Results
 
-I find that the malignant cases have systematically larger values for all of the features, compared to the benign cases, and so the two classes are linearly separable. Consequently, both logistic regression and SVM perform extremely well on this dataset, with a recall score of 98% for logistic regression and a slightly lower score of 97% for SVM. There are no significant improvements on the recall scores if the dimensions are reduced with PCA, but the feature selection is made very efficient and easy.
+Both logistic regression and SVM perform extremely well on this dataset, with a recall score of 98% for logistic regression and a slightly lower score of 97% for SVM. There are no significant improvements on the recall scores if the dimensions are reduced with PCA, but the feature selection is made very efficient and easy.
