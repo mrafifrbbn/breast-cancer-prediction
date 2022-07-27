@@ -2,6 +2,10 @@
 
 Hello! This is my second data science project. Here, I make machine learning models to predict whether a breast cancer is benign or malignant based on the available features. I try to implement what I have learned so far: standard data cleaning, EDA, classification model, hyperparameter tuning, and dimensionality reduction with PCA.
 
+# Files
+
+This repo contains this `README`, a python notebook called `breast_cancer.ipynb`, a slides in pdf format to highlight the most important aspects of this project called 'Breast Cancer Prediction.pdf', and the dataset `data.csv` is in the `data` directory.
+
 # Data
 
 I use the Breast Cancer Wisconsin dataset obtained from [Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). This dataset is also one of the [toy datasets](https://scikit-learn.org/stable/datasets/toy_dataset.html) readily available in the scikit-learn package. The content of this dataset is as follows:
